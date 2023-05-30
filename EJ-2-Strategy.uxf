@@ -1,0 +1,63 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>Text</id><coordinates><x>54</x><y>0</y><w>855</w><h>216</h></coordinates><panel_attributes>*Ejercicio 2*
+
+Queremos modelar un sistema de liquidación de sueldos que permita aplicar bonos y descuentos a los empleados de acuerdo a reglas definidas por cada categoría de empleado. El sistema debe soportar que un empleado cambie de categoría y se pueda recalcular el sueldo sin tener que hacer cambios en el modelo.
+Las categorías y algoritmos de cálculo de los empleados son:
+	• Categoría A: Los empleados que tengan esta categoría recibirán un bono equivalente al X% de su sueldo bruto anual, siendo X el día de ingreso a la compañía (de 1 a 31).
+	• Categoría B: Los empleados de la categoría B recibirán un descuento de su sueldo si es que su nombre empieza con una vocal equivalente al X% de su sueldo bruto anual, siendo X la cantidad de hijos que tienen.
+	• Categoría C: Los empleados de categoría C recibirán un bono de $500.
+
+*Se pide:*
+	• Desarrollar un modelo de clases capaz de soportar el comportamiento mencionado anteriormente
+	• Desarrollar un diagrama de secuencia del cálculo de sueldo neto de un empleado de Categoría B
+style=wordwrap
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>72</x><y>333</y><w>189</w><h>45</h></coordinates><panel_attributes>CategoriaA
+--
++ejecutarCalculo(categoria): sueldo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>333</y><w>189</w><h>45</h></coordinates><panel_attributes>CategoriaB
+--
++ejecutarCalculo(categoria): sueldo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>468</x><y>333</y><w>189</w><h>63</h></coordinates><panel_attributes>CategoriaC
+--
+_+BONO: int = 500_
+--
++ejecutarCalculo(categoria): sueldo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>234</y><w>189</w><h>54</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+ICategoria
+--
+/+ejecutarCalculo(categoria): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>279</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>279</y><w>126</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>216</y><w>198</w><h>162</h></coordinates><panel_attributes>Empleado
+--
+- nombre: String
+- sueldoXMes: double
+- diaIngreso: int
+- cantHijos(): int
+- categoria: ICategoria
+- contexto: Contexto
+--
++Empleado()
++calcularSuedo(categoria): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>261</y><w>378</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
+- categoria
+m1=1</panel_attributes><additional_attributes>10;20;400;20</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>279</y><w>126</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;120;60</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>81</x><y>423</y><w>90</w><h>27</h></coordinates><panel_attributes>_:Empleado_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>117</x><y>486</y><w>18</w><h>162</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>270</x><y>423</y><w>90</w><h>27</h></coordinates><panel_attributes>_:ICategoria_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>486</x><y>423</y><w>90</w><h>27</h></coordinates><panel_attributes>_:CategoriaB_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>306</x><y>486</y><w>18</w><h>36</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>486</y><w>198</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
++calcularSueldo(categoria)</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>315</x><y>486</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+/+calcularSueldo(categoria)/</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>522</x><y>486</y><w>18</w><h>162</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>54</x><y>531</y><w>684</w><h>126</h></coordinates><panel_attributes>alt
+--
+
+
+
+-.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>549</x><y>540</y><w>198</w><h>27</h></coordinates><panel_attributes>[nombreEmpiezaCONVocal = true ]
+style=wordwrap
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>549</x><y>612</y><w>198</w><h>27</h></coordinates><panel_attributes>[nombreEmpiezaCONVocal = false]
+style=wordwrap
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>612</y><w>414</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+sueldo</panel_attributes><additional_attributes>10;20;440;20</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>540</y><w>414</w><h>45</h></coordinates><panel_attributes>lt=&lt;..
+(sueldoBrutoAnual = sueldoXMes x 12)
+sueldo = sueldoBrutoAnual - (sueldoBrutoAnual x (cantHijos/100))</panel_attributes><additional_attributes>10;20;440;20</additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>441</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>306</x><y>441</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>522</x><y>441</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>522</x><y>639</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>639</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>306</x><y>513</y><w>27</w><h>180</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>UMLClass</id><coordinates><x>558</x><y>198</y><w>189</w><h>63</h></coordinates><panel_attributes>Contexto
+--
+--
++ ejecutarCalculo(): double
++setCategoria(ICategoria): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>225</y><w>126</w><h>45</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;30;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>702</x><y>252</y><w>126</w><h>81</h></coordinates><panel_attributes>lt=&lt;-
+- contexto
+m1=1</panel_attributes><additional_attributes>10;10;10;70;120;70</additional_attributes></element><element><id>Text</id><coordinates><x>171</x><y>388</y><w>99</w><h>63</h></coordinates><panel_attributes>Tarea:
+Agregar contexto
+bg=red</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,49 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>153</x><y>45</y><w>225</w><h>90</h></coordinates><panel_attributes>/AbstractClass/
+Componente
+--
+--
++ addProducto(ProductoRecambio): void
++ removeProducto(): void
++ getProducto(): ProductoRecambio
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>135</x><y>189</y><w>225</w><h>162</h></coordinates><panel_attributes>Combo
+--
+- lista: ProductoRecambio
+- precio: String
+- nombre: String
+--
++ Recambio(String, double)
++ addProducto(ProductoRecambio): void
++ removeProducto(): void
++ getProducto(): ProductoRecambio
++ getNombre(): String
++ getPrecio(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>378</x><y>189</y><w>153</w><h>117</h></coordinates><panel_attributes>Producto
+--
+- precio: double
+- nombre: String
+--
++ Elemento(String, double)
++ getNombre(): String
++ getPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>99</y><w>99</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;10;90;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>486</x><y>45</y><w>153</w><h>45</h></coordinates><panel_attributes>Cliente
+--
+--
++ imprimirTicket(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>54</y><w>135</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+- Combos</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>63</x><y>405</y><w>90</w><h>27</h></coordinates><panel_attributes>_:Cliente_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>234</x><y>405</y><w>90</w><h>27</h></coordinates><panel_attributes>_:Combo_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>99</x><y>459</y><w>18</w><h>405</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>108</x><y>450</y><w>477</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+1) imprimirTicket()</panel_attributes><additional_attributes>510;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>531</x><y>405</y><w>81</w><h>27</h></coordinates><panel_attributes>_:Producto_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>486</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+2) addProducto(Producto Hamburguesa)</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>567</x><y>459</y><w>18</w><h>351</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>270</x><y>486</y><w>18</w><h>378</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>513</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+3) addProducto(Producto Papas)</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>540</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+4) addProducto(Producto Gaseosa)</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Relation</id><coordinates><x>108</x><y>828</y><w>180</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+11) total *= 0.9</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>225</x><y>711</y><w>378</w><h>108</h></coordinates><panel_attributes>loop
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>738</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+9) getPrecio(): double</panel_attributes><additional_attributes>320;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>783</y><w>306</w><h>45</h></coordinates><panel_attributes>lt=&lt;..
+10) total += double
+</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Text</id><coordinates><x>288</x><y>711</y><w>153</w><h>27</h></coordinates><panel_attributes>[foreach Elemento in lista]
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>423</y><w>27</w><h>54</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>423</y><w>27</w><h>81</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>423</y><w>27</w><h>54</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>126</y><w>27</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>585</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+5) addProducto(Producto Hamburguesa con Queso)</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>612</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+6) addProducto(Producto Papas con cheddar)</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>639</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+7) addProducto(Producto Agua sin gas)</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>675</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+8) addProducto(Producto Remera)</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>198</x><y>477</y><w>405</w><h>90</h></coordinates><panel_attributes>Combo 1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>198</x><y>576</y><w>405</w><h>90</h></coordinates><panel_attributes>Combo 2</panel_attributes><additional_attributes></additional_attributes></element></diagram>

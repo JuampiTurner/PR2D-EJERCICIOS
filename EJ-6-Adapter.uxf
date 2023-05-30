@@ -1,0 +1,19 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>135</x><y>90</y><w>198</w><h>99</h></coordinates><panel_attributes>Mapeador
+--
+-field: type
+--
++getDireccion(x,y): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>432</x><y>81</y><w>243</w><h>99</h></coordinates><panel_attributes>BingMaps
+--
+-field: type
+--
++obtenerDireccion(decimal, decimal): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>324</x><y>126</y><w>126</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>468</x><y>405</y><w>198</w><h>99</h></coordinates><panel_attributes>GoogleMaps
+--
+-field: type
+--
++getAdress(double, double): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>99</x><y>405</y><w>252</w><h>72</h></coordinates><panel_attributes>Adapter
+--
++obtenerDireccion(decimal, decimal):String
+-convertirDecimalADouble(decimal): Double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>198</x><y>351</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>441</y><w>144</w><h>27</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>153</x><y>288</y><w>252</w><h>72</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IAdapter
+--
+/+obtenerDireccion(decimal, decimal):String/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>180</y><w>27</w><h>126</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element></diagram>

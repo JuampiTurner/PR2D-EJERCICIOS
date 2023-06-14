@@ -1,0 +1,45 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>704</x><y>56</y><w>184</w><h>112</h></coordinates><panel_attributes>Tamagotchi
+--
+
+--
++Tamagotchi()
++darleDeComer():void
++darleAgua():void
++hacerleMimos():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>728</x><y>224</y><w>136</w><h>80</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IEstado
+--
+--
++darleDeComer():void
++darleAgua():void
++hacerleMimos():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>504</x><y>352</y><w>128</w><h>72</h></coordinates><panel_attributes>FelizEstado
+--
+--
++darleDeComer():void
++darleAgua():void
++hacerleMimos():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>656</x><y>352</y><w>128</w><h>72</h></coordinates><panel_attributes>TristeEstado
+--
+--
++darleDeComer():void
++darleAgua():void
++hacerleMimos():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>808</x><y>352</y><w>128</w><h>72</h></coordinates><panel_attributes>SedientoEstado
+--
+--
++darleDeComer():void
++darleAgua():void
++hacerleMimos():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>352</y><w>128</w><h>72</h></coordinates><panel_attributes>HambrientoEstado
+--
+--
++darleDeComer():void
++darleAgua():void
++hacerleMimos():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>784</x><y>160</y><w>56</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+-estado</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>784</x><y>296</y><w>96</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;40;100;40;100;70</additional_attributes></element><element><id>Relation</id><coordinates><x>784</x><y>296</y><w>256</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;40;300;40;300;70</additional_attributes></element><element><id>Relation</id><coordinates><x>712</x><y>296</y><w>96</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;100;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>296</y><w>248</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>290;10;290;40;10;40;10;70</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>520</x><y>536</y><w>96</w><h>24</h></coordinates><panel_attributes>_Usuario_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>680</x><y>536</y><w>80</w><h>24</h></coordinates><panel_attributes>_Tamagotchi_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>824</x><y>536</y><w>96</w><h>24</h></coordinates><panel_attributes>_HambrientoEstado_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>984</x><y>536</y><w>80</w><h>24</h></coordinates><panel_attributes>_FelizEstado_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>552</y><w>24</w><h>48</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>712</x><y>584</y><w>16</w><h>192</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>568</x><y>584</y><w>160</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
+1- darleDeComer()</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>648</y><w>24</w><h>144</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>560</x><y>584</y><w>16</w><h>72</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>712</x><y>552</y><w>24</w><h>48</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>864</x><y>552</y><w>24</w><h>48</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>864</x><y>584</y><w>16</w><h>104</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>608</y><w>160</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
+2- darleDeComer()</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>664</y><w>160</w><h>32</h></coordinates><panel_attributes>lt=-&gt;
+4- remplazar estados</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1016</x><y>672</y><w>16</w><h>104</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>872</x><y>656</y><w>160</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
+3- crear Instacia de felizState</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1016</x><y>552</y><w>24</w><h>136</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>864</x><y>680</y><w>24</w><h>112</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element></diagram>

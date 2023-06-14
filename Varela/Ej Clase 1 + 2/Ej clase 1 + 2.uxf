@@ -1,0 +1,56 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>Space for diagram notesinteraction frame
+group=group-0</help_text><element><id>UMLGeneric</id><coordinates><x>504</x><y>543</y><w>84</w><h>21</h></coordinates><panel_attributes>_Usuario_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>686</x><y>543</y><w>84</w><h>21</h></coordinates><panel_attributes>_MaquinaDeCafe_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1057</x><y>543</y><w>84</w><h>21</h></coordinates><panel_attributes>_CafesSolo_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>539</x><y>557</y><w>21</w><h>42</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>721</x><y>585</y><w>14</w><h>217</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>546</x><y>585</y><w>189</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+1- PrepararBebida(idBebida)</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>539</x><y>585</y><w>14</w><h>238</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>721</x><y>557</y><w>21</w><h>42</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>1092</x><y>557</y><w>21</w><h>77</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1092</x><y>620</y><w>14</w><h>49</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>728</x><y>620</y><w>378</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+2- Preparar()</panel_attributes><additional_attributes>520;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>518</x><y>137</y><w>154</w><h>98</h></coordinates><panel_attributes>MaquinaDeCafe
+--
+-nombre: String
+-ubicacion: String
+-saldoTotal: Double
+--
+MaquinaDeCafe()
++PrepararBebida(int):void
+-sumarSaldo(double):void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>539</x><y>816</y><w>21</w><h>42</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>721</x><y>802</y><w>21</w><h>49</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Text</id><coordinates><x>742</x><y>487</y><w>196</w><h>21</h></coordinates><panel_attributes>Diagrama de secuncia de compra de debida
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>665</x><y>165</y><w>189</w><h>35</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-bebidas</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>721</x><y>291</y><w>154</w><h>126</h></coordinates><panel_attributes>CafeSolo
+--
++nombre: String
++descripcion: String
++receta: String
++tamanioCC: int
++precio: double
+-
+Cafe(String,String,String,Int)
++Preparar():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>889</x><y>291</y><w>154</w><h>119</h></coordinates><panel_attributes>CafeConLeche
+--
++nombre: String
++descripcion: String
++receta: String
++tamanioCC: int
++precio: double
+-
+Cafe(String,String,String,Int)
++Preparar():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>137</y><w>70</w><h>56</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Preparable
+--
++Preparar():void
++getPrecio():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>868</x><y>186</y><w>112</w><h>119</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80;140;80;140;150</additional_attributes></element><element><id>Relation</id><coordinates><x>777</x><y>186</y><w>112</w><h>119</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;140;80;10;80;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>875</x><y>543</y><w>84</w><h>21</h></coordinates><panel_attributes>_CafeConLeche_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>557</y><w>21</w><h>140</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>910</x><y>683</y><w>14</w><h>49</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>595</x><y>627</y><w>70</w><h>21</h></coordinates><panel_attributes>idBebida == 0
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>595</x><y>676</y><w>70</w><h>21</h></coordinates><panel_attributes>idBebida == 1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>728</x><y>641</y><w>378</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+3- getPrecio()</panel_attributes><additional_attributes>520;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>588</x><y>613</y><w>532</w><h>126</h></coordinates><panel_attributes>ALT
+--
+
+
+
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1092</x><y>662</y><w>21</w><h>175</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>725</y><w>21</w><h>112</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>728</x><y>683</y><w>196</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+2- Preparar()</panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>546</x><y>781</y><w>189</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+5- dar Cafe a Usuario</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element><element><id>Relation</id><coordinates><x>728</x><y>753</y><w>161</w><h>49</h></coordinates><panel_attributes>lt=&lt;-
+4- sumarSaldo(precioCafe)</panel_attributes><additional_attributes>10;50;60;50;60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>721</x><y>704</y><w>203</w><h>28</h></coordinates><panel_attributes>lt=&lt;-
+3- getPrecio()</panel_attributes><additional_attributes>270;20;10;20</additional_attributes></element></diagram>

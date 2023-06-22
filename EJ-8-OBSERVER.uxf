@@ -1,0 +1,64 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>392</x><y>120</y><w>184</w><h>80</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+ISubject
+--
+--
+/+registrarMedico(Observer): void/
+/+eliminarMedico(Observer): void/
+/+notificar(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>688</x><y>136</y><w>88</w><h>56</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IObserver
+--
+--
+/+update(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>688</x><y>272</y><w>88</w><h>88</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+/Medico/
+--
+- nombre: String
+- telefono: int
+- pager: boolean
+--
++ update(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>568</x><y>152</y><w>136</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>184</y><w>24</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>568</x><y>320</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+- subject
+</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>312</y><w>168</w><h>104</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+Maquina
+--
+- nombre: String
+- telefono: int
+- pager: boolean
+--
+/+ medir(): double/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>192</x><y>480</y><w>120</w><h>56</h></coordinates><panel_attributes>TomadorDePulso
+--
+- pulsacionesXMin: int
+--
++ medir(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>480</y><w>120</w><h>56</h></coordinates><panel_attributes>Termometro
+--
+- temperatura: double
+--
++ medir(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>64</x><y>480</y><w>120</w><h>56</h></coordinates><panel_attributes>Balanza
+--
+- peso: double
+--
++ medir(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>872</x><y>352</y><w>64</w><h>40</h></coordinates><panel_attributes>Cardiologo
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>872</x><y>296</y><w>72</w><h>40</h></coordinates><panel_attributes>Nutricionista
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>872</x><y>248</y><w>80</w><h>40</h></coordinates><panel_attributes>Traumatologo
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>768</x><y>264</y><w>120</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;50;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>768</x><y>312</y><w>120</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;20;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>768</x><y>336</y><w>120</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;50</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>408</y><w>24</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>408</y><w>96</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>408</y><w>104</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;110;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>288</y><w>176</w><h>96</h></coordinates><panel_attributes>Paciente
+--
+- nombre: String
+- dni: int
+--
++registrarMaquina(Observer): void
++eliminarMaquin(Observer): void
++notificar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>336</y><w>96</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+- maquina
+m1=1</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>160</y><w>168</w><h>64</h></coordinates><panel_attributes>Hospital
+--
+--
++ agregarPaciente(Paciente): void
++ eliminarPaciente(Paciente): void
++ obtenerPaciente(int): Paciente</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>216</y><w>160</w><h>96</h></coordinates><panel_attributes>lt=&lt;-
+- pacientesIntensivos
+m1=16</panel_attributes><additional_attributes>180;90;30;90;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>352</y><w>432</w><h>64</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;520;60;520;10</additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>192</y><w>24</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>208</y><w>344</w><h>88</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;410;90</additional_attributes></element><element><id>Relation</id><coordinates><x>568</x><y>184</y><w>144</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+- subscritos
+m1=*</panel_attributes><additional_attributes>150;10;150;60;10;60;10;130</additional_attributes></element></diagram>

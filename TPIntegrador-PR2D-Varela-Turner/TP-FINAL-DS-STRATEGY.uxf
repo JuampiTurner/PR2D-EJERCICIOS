@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLNote</id><coordinates><x>187</x><y>0</y><w>264</w><h>44</h></coordinates><panel_attributes>PATRON STRATEGY
+bg=cyan
+fontsize=24
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>231</x><y>165</y><w>22</w><h>385</h></coordinates><panel_attributes>
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>187</x><y>88</y><w>110</w><h>33</h></coordinates><panel_attributes>_:Doctor_
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>242</x><y>198</y><w>22</w><h>33</h></coordinates><panel_attributes>
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>242</x><y>176</y><w>319</w><h>66</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1) atenderMascota(Mascota type Perro)</panel_attributes><additional_attributes>20;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>187</x><y>242</y><w>759</w><h>319</h></coordinates><panel_attributes>alt
+--
+
+
+
+-.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>242</x><y>242</y><w>264</w><h>99</h></coordinates><panel_attributes>lt=&lt;.
+
+
+2) No atiende la mascota
+ porque no es su especialidad
+</panel_attributes><additional_attributes>20;60;50;60;50;30;10;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>242</x><y>396</y><w>22</w><h>33</h></coordinates><panel_attributes>
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>242</x><y>286</y><w>22</w><h>33</h></coordinates><panel_attributes>
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>396</x><y>242</y><w>198</w><h>33</h></coordinates><panel_attributes>[getEspecialidad() != Perro]
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>396</x><y>319</y><w>198</w><h>33</h></coordinates><panel_attributes>[getEspecialidad() == Perro]
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>198</x><y>352</y><w>407</w><h>88</h></coordinates><panel_attributes>alt
+--
+
+
+
+
+-.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>264</x><y>352</y><w>330</w><h>33</h></coordinates><panel_attributes>[getTipoDeAtencion() != TipoDeAtencionMasajes]
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>242</x><y>374</y><w>363</w><h>66</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+3) setTipoDeAtencion(TipoDeAtencionMasajes)</panel_attributes><additional_attributes>20;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>627</x><y>88</y><w>154</w><h>33</h></coordinates><panel_attributes>_:&lt;&lt;i&gt;&gt;ITipoDeAtencion_
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>825</x><y>88</y><w>187</w><h>33</h></coordinates><panel_attributes>_:TipoDeAntencionMasajes_
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>682</x><y>451</y><w>22</w><h>44</h></coordinates><panel_attributes>
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>242</x><y>451</y><w>462</w><h>44</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+4) atenderMascota(Perro)</panel_attributes><additional_attributes>400;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>693</x><y>451</y><w>231</w><h>44</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+5) atenderMascota(Perro)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>902</x><y>451</y><w>22</w><h>99</h></coordinates><panel_attributes>
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>242</x><y>506</y><w>682</w><h>44</h></coordinates><panel_attributes>lt=&lt;..
+6) Mascota relajada</panel_attributes><additional_attributes>10;20;600;20</additional_attributes></element><element><id>Relation</id><coordinates><x>902</x><y>539</y><w>33</w><h>88</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>682</x><y>110</y><w>33</w><h>363</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;310</additional_attributes></element><element><id>Relation</id><coordinates><x>902</x><y>110</y><w>33</w><h>363</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;310</additional_attributes></element><element><id>Relation</id><coordinates><x>231</x><y>539</y><w>33</w><h>88</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>682</x><y>484</y><w>33</w><h>143</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>231</x><y>121</y><w>33</w><h>66</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element></diagram>
